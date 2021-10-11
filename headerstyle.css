@@ -1,0 +1,178 @@
+header {
+    position: fixed;
+    width: 100vw;
+    background: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.header-flex {
+   /* width: 72.73vw; */
+    width: 80vw;
+    margin: 0 auto;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu ul {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6%;
+}
+
+#menu li a {
+    color: #000;
+}
+
+#menu li a:hover {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.6);
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#menu li {
+    font-size: 2.25rem;
+}
+
+#menu li button {
+    color: #2F70FE;
+    background: #FFF;
+    font-size: 2.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#menu li button:hover {
+    border-bottom: 1px solid;
+    transition: 0.3s;
+}
+
+/* Menu Mobile */
+#menu {
+    display: block;
+    position:absolute;
+    width: 100%;
+    right: 0;
+    background: white;
+    text-align: center;
+    transition: .6s;
+    z-index:1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: auto;
+}
+
+#nav.active #menu {
+    height: 100vh;
+    visibility: visible;
+}
+
+#btn-mobile {
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+}
+
+#hamburguer {
+    display: block;
+    color: #000;
+    border-top: 2px solid;
+    width: 27px;
+}
+
+#hamburguer::after, #hamburguer::before {
+    content: '';
+    display: block;
+    width: 27px;
+    height: 2px;
+    margin-top: 8px;
+    background: currentColor;
+    transition: .4s;
+    position: relative;
+}
+
+#nav.active #hamburguer {
+    border-top-color: transparent;
+}
+
+#nav.active #hamburguer::before {
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -10px
+}
+
+@media screen and (min-width: 830px) {
+    .header-flex {
+        width: 90vw;
+        align-items: center;
+    }
+    
+    .logo {
+        height: 1.75rem;
+    }
+
+    #btn-mobile {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        position: relative;
+        width: auto;
+        visibility: visible;
+        overflow-y: visible;
+        height: auto;
+    }
+
+    #nav {
+        width: 50%;
+    }
+
+    #menu ul {
+        height: max-content;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+    }
+
+    #menu li {
+        font-size: 0.875rem;
+    }
+
+    #menu li button {
+        font-size: 1rem;
+        border: 1px solid #2F70FE;
+        box-sizing: border-box;
+        padding: 0.75rem 1.438rem;
+    }
+
+    #menu li button:hover {
+        opacity: 0.6;
+        border: 1px solid;
+        transition: 0.3s;
+    }
+}
+
+@media screen and (min-width: 954px) {
+    #nav {
+        width: 26.813rem;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .header-flex {
+        width: 81.25rem;
+    }
+}

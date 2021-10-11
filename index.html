@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./headerstyle.css">
+    <title>Zomentum</title>
+</head>
+<body>
+    <header>
+        <div class="header-flex">
+            <a href="#presentation" class="logo"><img src="./imagens-mobile/logo-mobile.png" alt="Zomentum's Logo"></a>
+            <nav id="nav">
+                <button id="btn-mobile"><span id="hamburguer"></span></button>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><button>Get a demo</button></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="presentation">
+            <div class="text-presentation">
+                <h2>Find the right partners to fuel your business growth</h2>
+                <p>Join a vibrant community of MSPs to forge long-lasting relationships with partners that help you create excellent customer experiences</p>
+            </div>
+            <div class="btn-img-presentation">
+                <img src="./imagens/PartnerHeroImageLeft.svg" alt="">
+                <div><button>Register today</button></div>
+                <img src="./imagens/PartnerHeroImageRight.svg" alt="">
+            </div>
+
+        </section>
+        <section id="features">
+            <h2>List. Sell. Grow</h2>
+            <div class="features-items">
+                <div>
+                    <img src="./imagens-mobile/Ellipse1.svg" alt="">
+                    <p>Be a part of the only All-In-One platform for IT </p>
+                </div>
+                <div>
+                    <img src="./imagens-mobile/Ellipse2.svg" alt=""> 
+                    <p>Come closer to finding your next customer</p>   
+                </div>
+                <div>
+                    <img src="./imagens-mobile/Ellipse3.svg" alt="">
+                    <p>Grow your business with a single click</p>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="services-items">
+                <img class="img-services-mobile" src="./imagens-mobile/figure1.svg" alt="">
+                <img class="img-services-desktop" src="./imagens/figure1.svg" alt="">
+                <div class="services-items-text">
+                    <h3>Your channel program <br>on steroids</h3>
+                    <p>Tired of finding MSPs that can help you boost your channel sales?  You’re in luck, because they’re all here.</p>
+                </div>
+            </div>
+            <div class="services-items">
+                <img class="img-services-mobile" src="./imagens-mobile/figure2.svg" alt="">
+                <img class="img-services-desktop" src="./imagens/figure2.svg" alt="">
+                <div class="services-items-text">
+                    <h3>Become the vendor <br>everyone wants to buy from</h3>
+                    <p>Gain brand authority and visibility with the help of the largest IT service ecosystem. Find customers who are looking for your solution right now!</p>
+                    <a href="#">
+                        <p>Signup now</p>
+                        <img src="./imagens-mobile/Right menu Arrow.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="services-items">
+                <img class="img-services-mobile" src="./imagens-mobile/figure3.svg" alt="">
+                <img class="img-services-desktop" src="./imagens/figure3.svg" alt="">
+                <div class="services-items-text">
+                    <h3>It’s like having your best <br>Salesman on autopilot</h3>
+                    <p>Share collaterals and documents that are automatically branded. Leverage a rich partner network that sells your solution exactly the way your best salesman would.</p>
+                    <a href="#">
+                        <p>Signup now</p>
+                        <img src="./imagens-mobile/Right menu Arrow.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="services-items">
+                <img class="img-services-mobile" src="./imagens-mobile/figure4.svg" alt="">
+                <img class="img-services-desktop" src="./imagens/figure4.svg" alt="">
+                <div class="services-items-text">
+                    <h3>Track your channel <br>performance</h3>
+                    <p>Monitor the health and revenue of your channel program and streamline your campaign to win more customers within Zomentum.</p>
+                    <a href="#">
+                        <p>Signup now</p>
+                        <img src="./imagens-mobile/Right menu Arrow.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <div class="footer-blocks">
+                <h3>Product</h3>
+                <div class="footer-items">
+                    <a>Features</a>
+                    <a>Pricing</a>
+                    <a>Interactions</a>
+                    <a>Product</a>
+                </div>
+            </div>
+            <div class="footer-blocks">
+                <h3>Company</h3>
+                <div class="footer-items">
+                    <a>About us</a>
+                    <a>Contact us</a>
+                    <a>Submit a ticket</a>
+                    <a>Privacy policy</a>
+                    <a>Terms &#38; conditions</a>
+                </div>
+            </div>
+            <div class="footer-blocks">
+                <h3>Guides</h3>
+                <div class="footer-items">
+                    <a>MSP</a>
+                    <a>MSP Sales</a>
+                </div>
+            </div>
+            <div class="footer-blocks">
+                <h3>Contact Us</h3>
+                <div class="footer-items">
+                    <a>Address</a>
+                </div>
+            </div>
+        </section>
+        <p>&#169; <span id="year"></span> Pactora Inc. All rights reserved.</p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
